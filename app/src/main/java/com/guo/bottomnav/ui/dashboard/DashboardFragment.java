@@ -33,9 +33,11 @@ public class DashboardFragment extends Fragment {
             }
         });
 
-        Toolbar mToolbar = (Toolbar) root.findViewById(R.id.mToolbar);
-        mToolbar.setTitle("DashboardHere");
-        ((AppCompatActivity) getActivity()).setSupportActionBar(mToolbar);
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("DashboardHere");
+
+//        Toolbar mToolbar = (Toolbar) root.findViewById(R.id.mToolbar);
+//        mToolbar.setTitle("DashboardHere");
+//        ((AppCompatActivity) getActivity()).setSupportActionBar(mToolbar);
 
         return root;
     }
