@@ -33,9 +33,8 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        Toolbar mToolbar = (Toolbar) root.findViewById(R.id.mToolbar);
-        mToolbar.setTitle("HomeHere");
-        ((AppCompatActivity) getActivity()).setSupportActionBar(mToolbar);
+        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.mToolbar);
+        toolbar.setTitle("HomeHere");
 
         return root;
     }

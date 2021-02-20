@@ -33,9 +33,8 @@ public class NotificationsFragment extends Fragment {
             }
         });
 
-        Toolbar mToolbar = (Toolbar) root.findViewById(R.id.mToolbar);
-        mToolbar.setTitle("NotifyHere");
-        ((AppCompatActivity) getActivity()).setSupportActionBar(mToolbar);
+        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.mToolbar);
+        toolbar.setTitle("NotifyHere");
 
         return root;
     }
